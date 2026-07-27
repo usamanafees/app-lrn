@@ -1,0 +1,22 @@
+{
+  "customers": [
+    {
+      "customer_id": 1,
+      "name": "Anna Schmidt",
+      "kwh": 120,
+      "money": 45.50
+    },
+    {
+      "customer_id": 2,
+      "name": "Jonas Weber",
+      "kwh": 85,
+      "money": 32.10
+    },
+    {
+      "customer_id": 3,
+      "name": "Maria Klein",
+      "kwh": 200,
+      "money": 78.25
+    }
+  ]
+}
