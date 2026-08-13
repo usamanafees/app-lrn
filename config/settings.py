@@ -43,6 +43,9 @@ INSTALLED_APPS = [
     'django_filters',
     'customers',
     'contracts',
+    'events.apps.EventsConfig',
+    # Why not just 'events'?
+    # Both work. 'events.apps.EventsConfig' is Django’s recommended way — you can later add app-specific settings (e.g. default_auto_field, ready() hook).
 ]
 
 MIDDLEWARE = [
