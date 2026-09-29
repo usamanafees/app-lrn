@@ -1,0 +1,14 @@
+[
+  {
+    "id": "REQ-001",
+    "section": "4.2.1",
+    "text": "The system shall detect pedestrians at speeds up to 60 km/h.",
+    "obligation_level": "shall"
+  },
+  {
+    "id": "REQ-002",
+    "section": "4.2.2",
+    "text": "Warning shall be issued within 2.0 seconds of detection.",
+    "obligation_level": "shall"
+  }
+]

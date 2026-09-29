@@ -4,3 +4,11 @@ __pycache__/
 *.pyc
 db.sqlite3
 .pytest_cache/
+# out_* practice folders — ignore env/cache only, keep source files
+out_*/venv/
+out_*/.venv/
+out_*/__pycache__/
+out_*/.pytest_cache/
+out_*/.env
+out_*/.mypy_cache/
+out_*/.ruff_cache/

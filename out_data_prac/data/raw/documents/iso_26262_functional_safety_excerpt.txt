@@ -1,0 +1,169 @@
+ISO 26262-6:2018 (excerpt)
+Road vehicles — Functional safety — Part 6: Product development at the software level
+
+Document ID: ISO-26262-6-2018-EXCERPT
+Language: en
+
+NOTE: This file is a synthetic excerpt for pipeline testing. It mimics structure
+and obligation language found in functional safety standards.
+
+================================================================================
+4  General topics for the product development at the software level
+================================================================================
+
+4.1  Objectives
+The objectives of this clause are:
+a) to define the software safety requirements derived from the technical safety
+   concept and system architectural design;
+b) to specify the software architectural design;
+c) to implement the software units; and
+d) to verify that the software achieves the required functional safety.
+
+4.2  General inputs
+4.2.1  Required inputs from item level
+- Technical safety requirements specification (refined)
+- System architectural design specification
+- Hardware-software interface (HSI) specification
+
+4.2.2  Required inputs from software level
+- Software safety requirements specification (if already available from prior iteration)
+
+4.3  General outputs
+4.3.1  Work products
+- Software safety requirements specification
+- Software architectural design specification
+- Software unit design and implementation
+- Software unit verification report
+- Software integration and verification report
+
+================================================================================
+5  Specification of software safety requirements
+================================================================================
+
+5.1  The software safety requirements shall be derived from the technical safety
+requirements and the system architectural design.
+
+5.2  Each software safety requirement shall be:
+a) uniquely identifiable;
+b) traceable to at least one technical safety requirement; and
+c) verifiable by analysis, review, or test.
+
+5.3  Software safety requirements shall specify safe states and transitions where
+applicable, including behavior in the presence of faults detected by safety
+mechanisms.
+
+5.4  The specification shall include timing requirements for safety-related
+functions, including maximum response times and deadline monitoring where
+required by the safety goals.
+
+5.5  Ambiguous terms (e.g., "fast", "robust", "user-friendly") shall not be used
+without quantified criteria.
+
+EXAMPLE: Replace "fast response" with "response within 100 ms at 95th percentile
+under nominal load".
+
+================================================================================
+6  Software architectural design
+================================================================================
+
+6.1  The software architectural design shall implement the software safety
+requirements and shall support their verification.
+
+6.2  The software architectural design shall exhibit the following properties:
+a) comprehensibility;
+b) consistency;
+c) simplicity; and
+d) verifiability.
+
+6.3  Safety-related software components shall be separated from non-safety-related
+software components to the extent required by the ASIL of the item, unless
+separation is demonstrated by other means accepted in the safety case.
+
+6.4  Freedom from interference shall be ensured between software elements with
+different ASIL assignments, or evidence shall be provided that interference
+is controlled.
+
+6.5  The architectural design shall describe:
+- static aspects (components, interfaces, data flows);
+- dynamic aspects (scheduling, interrupts, concurrency); and
+- resource usage estimates (CPU, memory, stack).
+
+6.6  Recursion depth and stack usage shall be analyzed for safety-related paths
+when dynamic memory allocation is prohibited by project policy.
+
+================================================================================
+7  Software unit design and implementation
+================================================================================
+
+7.1  Software units shall be developed in accordance with the software
+architectural design and coding guidelines selected for the project.
+
+7.2  Coding guidelines shall address:
+a) language subset (e.g., MISRA C:2012);
+b) prohibition of dynamic memory allocation in safety-related units unless justified;
+c) defensive programming practices; and
+d) use of assertions and error handling consistent with ASIL requirements.
+
+7.3  Software unit implementation shall be readable and maintainable. Complex
+units shall be decomposed until each unit is comprehensible and testable.
+
+7.4  Back-to-back comparison between model and code shall be performed when
+model-based development is used for safety-related functions.
+
+================================================================================
+8  Software unit verification
+================================================================================
+
+8.1  Software unit verification shall provide evidence that the software units
+fulfil their software unit requirements.
+
+8.2  Verification methods may include:
+- requirements-based test;
+- interface test;
+- fault injection test;
+- static analysis;
+- walk-through or inspection.
+
+8.3  Structural coverage shall be measured for safety-related software units:
+- ASIL D: statement, branch, and MC/DC coverage targets apply unless justified otherwise;
+- ASIL B: statement and branch coverage as minimum.
+
+8.4  Test results shall be recorded with pass/fail status, version of software
+under test, test environment configuration, and traceability to requirements.
+
+8.5  Failed tests shall be analyzed, classified, and resolved before release
+of the software to integration testing.
+
+================================================================================
+9  Software integration and verification
+================================================================================
+
+9.1  Integrated software shall be verified against software safety requirements
+at the integrated level.
+
+9.2  Integration tests shall include tests of:
+- inter-component communication;
+- timing and scheduling behavior;
+- error propagation and safe state entry; and
+- resource consumption under stress conditions.
+
+9.3  Regression testing shall be executed when changes are made to safety-related
+software, with scope proportional to the impact analysis.
+
+================================================================================
+10  Configuration management and change control (software)
+================================================================================
+
+10.1  All safety-related software artifacts shall be placed under configuration
+management before verification activities commence.
+
+10.2  Each change to safety-related software shall undergo impact analysis,
+approval by the functional safety manager or delegate, and updated verification
+evidence as determined by the impact analysis.
+
+10.3  Tool confidence and software tool qualification records shall be maintained
+for tools used to develop, generate, or verify safety-related software.
+
+================================================================================
+END OF EXCERPT
+================================================================================

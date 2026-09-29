@@ -1,0 +1,3 @@
+{"doc_id": "UN-ECE-R152-2024", "path": "data/raw/documents/un_ece_r152_pedestrian_detection.txt", "type": "text", "title": "UN ECE R152 pedestrian detection excerpt"}
+{"doc_id": "dummy_text", "path": "data/samples/dummy_text.pdf", "type": "pdf_text", "title": "W3C dummy PDF"}
+{"doc_id": "regulation_scan", "path": "data/samples/regulation_scan.png", "type": "image_scan", "title": "Synthetic regulation scan"}

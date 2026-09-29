@@ -1,0 +1,126 @@
+REGULATION (EU) 2019/2144 OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL
+on type-approval requirements for motor vehicles with respect to their general
+safety and the protection of vehicle occupants and vulnerable road users
+
+Document ID: EU-GSR-2019-ANNEX-II
+Annex II — Advanced driver assistance systems (excerpt)
+
+================================================================================
+SECTION A — GENERAL PROVISIONS
+================================================================================
+
+A.1. Vehicles referred to in Article 2(1) shall be equipped with the systems
+listed in Section B as from the dates specified in Article 6.
+
+A.2. Systems shall be type-approved in accordance with the corresponding UN
+Regulations or technical specifications referenced in column 4 of the table
+in Section B.
+
+A.3. Where a UN Regulation is updated, the version in force at the date of
+application set out in Article 6 shall apply unless a later version is
+mandated by Commission delegated act.
+
+A.4. The manufacturer shall ensure that systems remain operational during normal
+operating conditions and shall not design systems to depend on continuous
+connectivity to external networks for core safety functions.
+
+================================================================================
+SECTION B — SYSTEMS AND APPLICATION DATES (EXCERPT)
+================================================================================
+
+System code | System name                              | UN Reference | Application (new types)
+------------|------------------------------------------|--------------|------------------------
+GSR-01      | Intelligent speed assistance (ISA)       | UN R152*     | 7 July 2022
+GSR-02      | Alcohol interlock installation facilitation| —          | 7 July 2022
+GSR-03      | Driver drowsiness and attention warning  | UN R157*     | 7 July 2022
+GSR-04      | Advanced emergency braking (AEB)         | UN R152      | 7 July 2022
+GSR-05      | Emergency lane-keeping systems (ELKS)    | UN R79       | 7 July 2024
+GSR-06      | Event data recorder (EDR)                | UN R160      | 7 July 2025
+
+* Partial alignment — see correlation table in Annex IV.
+
+================================================================================
+SECTION C — PERFORMANCE AND TEST REQUIREMENTS (AEB EXCERPT)
+================================================================================
+
+C.1. Advanced emergency braking for pedestrian and cyclist protection
+
+C.1.1. The system shall comply with UN Regulation No. 152 as amended at the
+application date for the vehicle category.
+
+C.1.2. In addition, the following EU-specific provisions apply:
+
+C.1.2.1. The warning tell-tale symbol shall conform to ISO 2575 symbol ID P-087
+or subsequent revision accepted by the type-approval authority.
+
+C.1.2.2. The system shall remain enabled by default at each ignition cycle.
+
+C.1.2.3. The driver information message displayed upon system intervention shall
+be comprehensible without reference to the owner's manual for the initial
+warning within a single driving session.
+
+C.1.3. Verification
+
+C.1.3.1. Type-approval testing shall include scenarios AEBS-01 through AEBS-05
+as defined in UN R152 Annex 2 or equivalent scenarios accepted by the authority.
+
+C.1.3.2. Test reports shall record ambient illuminance, road surface condition,
+tyre specification, and vehicle loading condition.
+
+C.1.3.3. Repeatability: each mandatory scenario shall be executed until pass
+criteria are met or the maximum number of runs specified in the test protocol
+is exhausted; failures shall be documented with sensor logs.
+
+C.2. Event data recording linkage
+
+C.2.1. Where event data recorders are fitted, AEBS activation events shall be
+recorded with a minimum set of data elements:
+    - time stamp (UTC, 1 s resolution minimum);
+    - vehicle speed;
+    - brake pedal status;
+    - AEBS state (armed, warning, braking, fault);
+    - longitudinal acceleration.
+
+C.2.2. Data elements shall be readable by approved test equipment without
+requiring manufacturer proprietary tools unless those tools are supplied to
+the approval authority.
+
+C.2.3. Personal identifiers (e.g., VIN-linked driver profiles) shall not be
+written to the public EDR dataset accessible during roadside inspection.
+
+================================================================================
+SECTION D — CONFORMITY OF PRODUCTION
+================================================================================
+
+D.1. The manufacturer shall demonstrate that series-produced vehicles conform
+to the approved type with respect to each fitted system in Section B.
+
+D.2. Conformity of production shall include functional checks of:
+    (a) tell-tale operation;
+    (b) fault detection and indication; and
+    (c) absence of diagnostic trouble codes related to safety system faults.
+
+D.3. Sampling frequency and acceptance criteria shall be documented in the
+manufacturer's quality management system and made available to the authority
+upon request.
+
+D.4. Software updates affecting safety systems shall be notified to the authority
+when they alter type-approved behavior unless covered by an prior agreement on
+over-the-air update governance.
+
+================================================================================
+SECTION E — TRANSITIONAL PROVISIONS (EXCERPT)
+================================================================================
+
+E.1. Vehicles type-approved before 7 July 2022 are exempt from Section B
+requirements until major retrofit programs are mandated by member states.
+
+E.2. Small series manufacturers (<= 1,000 units per year) may apply for
+extended timelines subject to a documented safety equivalency argument.
+
+E.3. Exemptions shall not apply to systems where UN Regulations are marked
+"mandatory without phase-in" in Annex II column 5 (not reproduced in excerpt).
+
+================================================================================
+END OF EXCERPT
+================================================================================

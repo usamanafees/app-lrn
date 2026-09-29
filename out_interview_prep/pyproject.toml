@@ -1,0 +1,25 @@
+[project]
+name = "out-interview-prep"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi",
+    "uvicorn[standard]",
+    "pydantic",
+    "python-multipart",
+    "pdfplumber",
+    "pymupdf",
+    "pytesseract",
+    "pdf2image",
+    "pillow",
+    "httpx",
+    "tenacity",
+    "pytest",
+    "anthropic",
+    "google-genai",
+    "python-dotenv",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

@@ -1,0 +1,3 @@
+{"document_id": "UN-ECE-R152-2024", "expected_requirement_count": 18, "minimum_extraction_recall": 0.85, "required_fields": ["requirement_id", "document_id", "section", "text", "obligation_level", "source_file"]}
+{"document_id": "ISO-26262-6-2018-EXCERPT", "expected_requirement_count": 12, "minimum_extraction_recall": 0.85, "required_fields": ["requirement_id", "document_id", "section", "text", "obligation_level", "source_file"]}
+{"document_id": "EU-GSR-2019-ANNEX-II", "expected_requirement_count": 8, "minimum_extraction_recall": 0.85, "required_fields": ["requirement_id", "document_id", "section", "text", "obligation_level", "source_file"]}

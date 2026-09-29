@@ -1,0 +1,166 @@
+UN Regulation No. 152
+Uniform provisions concerning the approval of motor vehicles with regard to
+Advanced Emergency Braking Systems (AEBS) for pedestrian and cyclist detection
+
+Version: 2024-03 (excerpt for engineering extraction)
+Document ID: UN-ECE-R152-2024
+
+================================================================================
+1. SCOPE
+================================================================================
+
+1.1. This Regulation applies to vehicles of categories M1 and N1 with a maximum
+mass not exceeding 3.5 tonnes, equipped with an Advanced Emergency Braking
+System (AEBS) intended to detect pedestrians and cyclists.
+
+1.2. The requirements of this Regulation shall not apply to vehicles type-approved
+before 1 July 2022 unless otherwise specified in paragraph 1.3.
+
+1.3. Retrofit systems shall comply with Sections 4 through 7 of this Regulation.
+
+================================================================================
+2. DEFINITIONS
+================================================================================
+
+2.1. "Advanced Emergency Braking System (AEBS)" means a system which can
+automatically detect a potential forward collision and activate the vehicle
+braking system to decelerate the vehicle with the purpose of avoiding or
+mitigating a collision.
+
+2.2. "Critical Object" means a pedestrian or cyclist entering the predicted path
+of the subject vehicle such that a collision is imminent if no braking action
+occurs.
+
+2.3. "Time-to-Collision (TTC)" means the predicted time interval until contact
+between the subject vehicle and the critical object, assuming constant velocity
+for both unless sensor fusion indicates otherwise.
+
+2.4. "System Failure" means any condition in which the AEBS cannot perform its
+intended function within the performance limits defined in Section 5.
+
+================================================================================
+3. GENERAL REQUIREMENTS
+================================================================================
+
+3.1. The manufacturer shall ensure that the AEBS is operational whenever the
+vehicle ignition is in the "ON" state and vehicle speed is greater than 10 km/h
+and less than or equal to 60 km/h unless deactivation is explicitly permitted
+under Section 3.4.
+
+3.2. The system shall provide a visual warning to the driver at least 1.4 seconds
+before the initiation of automatic braking when a critical object is detected
+in the forward field of view.
+
+3.3. The system shall log the following events to non-volatile memory:
+    (a) activation of automatic braking;
+    (b) driver override of automatic braking;
+    (c) system failure as defined in 2.4;
+    (d) temporary deactivation by the driver.
+
+3.4. Temporary deactivation shall be permitted only when:
+    (a) vehicle speed is below 10 km/h; or
+    (b) the vehicle is operating in an approved off-road mode documented in the
+        vehicle owner's manual.
+
+3.5. Deactivation shall not persist across ignition cycles unless the driver
+explicitly confirms deactivation at each new ignition cycle.
+
+================================================================================
+4. DETECTION PERFORMANCE
+================================================================================
+
+4.1. Pedestrian detection — adult target
+
+4.1.1. The system shall detect an adult pedestrian target crossing the vehicle
+path at 5 km/h lateral speed in daylight conditions (illuminance >= 2000 lux)
+with a detection rate of not less than 95% over 20 consecutive test runs.
+
+4.1.2. The system shall detect the same target in night conditions (illuminance
+<= 5 lux, headlamps ON) with a detection rate of not less than 90% over 20
+consecutive test runs.
+
+4.1.3. False positive rate shall not exceed 1 event per 100 km during normal
+urban driving as defined in Annex 3, Table A.1.
+
+4.2. Cyclist detection — parallel path
+
+4.2.1. The system shall detect a cyclist travelling parallel to the subject
+vehicle at a lateral offset of 1.0 m (+/- 0.1 m) when relative speed is
+between 10 km/h and 40 km/h.
+
+4.2.2. Detection shall occur at a minimum distance of 25 m from the subject
+vehicle under dry road conditions.
+
+4.3. Sensor degradation
+
+4.3.1. When partial sensor occlusion is detected (>= 30% reduction in effective
+field of view), the system shall:
+    (a) inform the driver within 3 seconds via a yellow tell-tale; and
+    (b) reduce maximum automatic braking deceleration to 4 m/s^2 until occlusion
+        is cleared.
+
+4.3.2. The system shall not silently disable automatic braking without driver
+notification.
+
+================================================================================
+5. BRAKING PERFORMANCE
+================================================================================
+
+5.1. Upon detection of a critical object with TTC <= 1.8 s, the system shall
+initiate automatic braking to achieve a deceleration of at least 6 m/s^2 on
+dry pavement unless limited by Section 4.3.
+
+5.2. Maximum jerk during automatic braking shall not exceed 15 m/s^3 to avoid
+loss of driver control.
+
+5.3. The system shall release automatic braking within 500 ms after the driver
+applies accelerator pedal input exceeding 50% of full travel.
+
+5.4. Collision speed reduction: for test scenarios defined in Annex 2, the
+system shall reduce impact speed by at least 20 km/h or avoid collision entirely.
+
+================================================================================
+6. DIAGNOSTICS AND DATA RECORDING
+================================================================================
+
+6.1. The system shall store the last 50 AEBS events including timestamp (UTC),
+vehicle speed, TTC at warning, TTC at braking, object classification, and
+sensor health bitmask.
+
+6.2. Event logs shall be retrievable via the standardized OBD-II interface using
+manufacturer-specific mode 0x22 identifiers published in the type-approval file.
+
+6.3. Log retention shall survive loss of primary vehicle power for a minimum of
+72 hours using a backup power source or non-volatile storage.
+
+6.4. Personal data shall not be stored in event logs unless required for
+homologation and in compliance with applicable privacy regulations.
+
+================================================================================
+7. INFORMATION FOR THE DRIVER
+================================================================================
+
+7.1. The owner's manual shall describe:
+    (a) system limitations in adverse weather;
+    (b) meaning of tell-tale indicators;
+    (c) procedure for temporary deactivation;
+    (d) recommended maintenance intervals for sensors.
+
+7.2. A dashboard tell-tale shall illuminate when the system is temporarily
+unavailable due to sensor fault or environmental conditions beyond design limits.
+
+================================================================================
+ANNEX 2 (EXCERPT) — TEST SCENARIOS
+================================================================================
+
+Scenario ID | Description                              | Speed (km/h) | Expected outcome
+------------|------------------------------------------|--------------|------------------
+AEBS-01     | Adult pedestrian cross, daylight         | 40           | Warning + brake
+AEBS-02     | Adult pedestrian cross, night            | 40           | Warning + brake
+AEBS-03     | Cyclist parallel, dry                    | 30           | Warning optional
+AEBS-04     | No target, urban false-positive route    | 50           | No brake activation
+AEBS-05     | Partial camera occlusion simulation      | 40           | Tell-tale + limited decel
+
+================================================================================
+END OF EXCERPT
+================================================================================

@@ -1,0 +1,10 @@
+[project]
+name = "out-data-prac"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "google-genai>=2.20.0",
+    "pydantic",
+    "pytest",
+    "python-dotenv",
+]

@@ -1,0 +1,382 @@
+[
+  {
+    "requirement_id": "UN-ECE-R152-2024-3.1",
+    "document_id": "UN-ECE-R152-2024",
+    "section": "3.1",
+    "text": "The manufacturer shall ensure that the AEBS is operational whenever the vehicle ignition is in the ON state and vehicle speed is greater than 10 km/h and less than or equal to 60 km/h unless deactivation is explicitly permitted under Section 3.4.",
+    "obligation_level": "shall",
+    "source_file": "documents/un_ece_r152_pedestrian_detection.txt",
+    "domain": "automotive",
+    "object_type": "requirement"
+  },
+  {
+    "requirement_id": "UN-ECE-R152-2024-3.2",
+    "document_id": "UN-ECE-R152-2024",
+    "section": "3.2",
+    "text": "The system shall provide a visual warning to the driver at least 1.4 seconds before the initiation of automatic braking when a critical object is detected in the forward field of view.",
+    "obligation_level": "shall",
+    "source_file": "documents/un_ece_r152_pedestrian_detection.txt",
+    "domain": "automotive",
+    "object_type": "requirement"
+  },
+  {
+    "requirement_id": "UN-ECE-R152-2024-3.3.a",
+    "document_id": "UN-ECE-R152-2024",
+    "section": "3.3",
+    "text": "The system shall log activation of automatic braking to non-volatile memory.",
+    "obligation_level": "shall",
+    "source_file": "documents/un_ece_r152_pedestrian_detection.txt",
+    "domain": "automotive",
+    "object_type": "requirement"
+  },
+  {
+    "requirement_id": "UN-ECE-R152-2024-3.3.b",
+    "document_id": "UN-ECE-R152-2024",
+    "section": "3.3",
+    "text": "The system shall log driver override of automatic braking to non-volatile memory.",
+    "obligation_level": "shall",
+    "source_file": "documents/un_ece_r152_pedestrian_detection.txt",
+    "domain": "automotive",
+    "object_type": "requirement"
+  },
+  {
+    "requirement_id": "UN-ECE-R152-2024-3.3.c",
+    "document_id": "UN-ECE-R152-2024",
+    "section": "3.3",
+    "text": "The system shall log system failure as defined in 2.4 to non-volatile memory.",
+    "obligation_level": "shall",
+    "source_file": "documents/un_ece_r152_pedestrian_detection.txt",
+    "domain": "automotive",
+    "object_type": "requirement"
+  },
+  {
+    "requirement_id": "UN-ECE-R152-2024-3.3.d",
+    "document_id": "UN-ECE-R152-2024",
+    "section": "3.3",
+    "text": "The system shall log temporary deactivation by the driver to non-volatile memory.",
+    "obligation_level": "shall",
+    "source_file": "documents/un_ece_r152_pedestrian_detection.txt",
+    "domain": "automotive",
+    "object_type": "requirement"
+  },
+  {
+    "requirement_id": "UN-ECE-R152-2024-3.5",
+    "document_id": "UN-ECE-R152-2024",
+    "section": "3.5",
+    "text": "Deactivation shall not persist across ignition cycles unless the driver explicitly confirms deactivation at each new ignition cycle.",
+    "obligation_level": "shall",
+    "source_file": "documents/un_ece_r152_pedestrian_detection.txt",
+    "domain": "automotive",
+    "object_type": "requirement"
+  },
+  {
+    "requirement_id": "UN-ECE-R152-2024-4.1.1",
+    "document_id": "UN-ECE-R152-2024",
+    "section": "4.1.1",
+    "text": "The system shall detect an adult pedestrian target crossing the vehicle path at 5 km/h lateral speed in daylight conditions with a detection rate of not less than 95% over 20 consecutive test runs.",
+    "obligation_level": "shall",
+    "source_file": "documents/un_ece_r152_pedestrian_detection.txt",
+    "domain": "automotive",
+    "object_type": "requirement"
+  },
+  {
+    "requirement_id": "UN-ECE-R152-2024-4.1.2",
+    "document_id": "UN-ECE-R152-2024",
+    "section": "4.1.2",
+    "text": "The system shall detect the same target in night conditions with a detection rate of not less than 90% over 20 consecutive test runs.",
+    "obligation_level": "shall",
+    "source_file": "documents/un_ece_r152_pedestrian_detection.txt",
+    "domain": "automotive",
+    "object_type": "requirement"
+  },
+  {
+    "requirement_id": "UN-ECE-R152-2024-4.1.3",
+    "document_id": "UN-ECE-R152-2024",
+    "section": "4.1.3",
+    "text": "False positive rate shall not exceed 1 event per 100 km during normal urban driving as defined in Annex 3, Table A.1.",
+    "obligation_level": "shall",
+    "source_file": "documents/un_ece_r152_pedestrian_detection.txt",
+    "domain": "automotive",
+    "object_type": "requirement"
+  },
+  {
+    "requirement_id": "UN-ECE-R152-2024-4.2.1",
+    "document_id": "UN-ECE-R152-2024",
+    "section": "4.2.1",
+    "text": "The system shall detect a cyclist travelling parallel to the subject vehicle at a lateral offset of 1.0 m when relative speed is between 10 km/h and 40 km/h.",
+    "obligation_level": "shall",
+    "source_file": "documents/un_ece_r152_pedestrian_detection.txt",
+    "domain": "automotive",
+    "object_type": "requirement"
+  },
+  {
+    "requirement_id": "UN-ECE-R152-2024-4.3.1.a",
+    "document_id": "UN-ECE-R152-2024",
+    "section": "4.3.1",
+    "text": "When partial sensor occlusion of at least 30% is detected, the system shall inform the driver within 3 seconds via a yellow tell-tale.",
+    "obligation_level": "shall",
+    "source_file": "documents/un_ece_r152_pedestrian_detection.txt",
+    "domain": "automotive",
+    "object_type": "requirement"
+  },
+  {
+    "requirement_id": "UN-ECE-R152-2024-4.3.2",
+    "document_id": "UN-ECE-R152-2024",
+    "section": "4.3.2",
+    "text": "The system shall not silently disable automatic braking without driver notification.",
+    "obligation_level": "shall",
+    "source_file": "documents/un_ece_r152_pedestrian_detection.txt",
+    "domain": "automotive",
+    "object_type": "requirement"
+  },
+  {
+    "requirement_id": "UN-ECE-R152-2024-5.1",
+    "document_id": "UN-ECE-R152-2024",
+    "section": "5.1",
+    "text": "Upon detection of a critical object with TTC less than or equal to 1.8 s, the system shall initiate automatic braking to achieve a deceleration of at least 6 m/s^2 on dry pavement unless limited by Section 4.3.",
+    "obligation_level": "shall",
+    "source_file": "documents/un_ece_r152_pedestrian_detection.txt",
+    "domain": "automotive",
+    "object_type": "requirement"
+  },
+  {
+    "requirement_id": "UN-ECE-R152-2024-5.3",
+    "document_id": "UN-ECE-R152-2024",
+    "section": "5.3",
+    "text": "The system shall release automatic braking within 500 ms after the driver applies accelerator pedal input exceeding 50% of full travel.",
+    "obligation_level": "shall",
+    "source_file": "documents/un_ece_r152_pedestrian_detection.txt",
+    "domain": "automotive",
+    "object_type": "requirement"
+  },
+  {
+    "requirement_id": "UN-ECE-R152-2024-6.1",
+    "document_id": "UN-ECE-R152-2024",
+    "section": "6.1",
+    "text": "The system shall store the last 50 AEBS events including timestamp, vehicle speed, TTC at warning, TTC at braking, object classification, and sensor health bitmask.",
+    "obligation_level": "shall",
+    "source_file": "documents/un_ece_r152_pedestrian_detection.txt",
+    "domain": "automotive",
+    "object_type": "requirement"
+  },
+  {
+    "requirement_id": "UN-ECE-R152-2024-6.3",
+    "document_id": "UN-ECE-R152-2024",
+    "section": "6.3",
+    "text": "Log retention shall survive loss of primary vehicle power for a minimum of 72 hours using a backup power source or non-volatile storage.",
+    "obligation_level": "shall",
+    "source_file": "documents/un_ece_r152_pedestrian_detection.txt",
+    "domain": "automotive",
+    "object_type": "requirement"
+  },
+  {
+    "requirement_id": "UN-ECE-R152-2024-6.4",
+    "document_id": "UN-ECE-R152-2024",
+    "section": "6.4",
+    "text": "Personal data shall not be stored in event logs unless required for homologation and in compliance with applicable privacy regulations.",
+    "obligation_level": "shall",
+    "source_file": "documents/un_ece_r152_pedestrian_detection.txt",
+    "domain": "automotive",
+    "object_type": "requirement"
+  },
+  {
+    "requirement_id": "ISO-26262-6-2018-5.1",
+    "document_id": "ISO-26262-6-2018-EXCERPT",
+    "section": "5.1",
+    "text": "The software safety requirements shall be derived from the technical safety requirements and the system architectural design.",
+    "obligation_level": "shall",
+    "source_file": "documents/iso_26262_functional_safety_excerpt.txt",
+    "domain": "functional_safety",
+    "object_type": "requirement"
+  },
+  {
+    "requirement_id": "ISO-26262-6-2018-5.2.a",
+    "document_id": "ISO-26262-6-2018-EXCERPT",
+    "section": "5.2",
+    "text": "Each software safety requirement shall be uniquely identifiable.",
+    "obligation_level": "shall",
+    "source_file": "documents/iso_26262_functional_safety_excerpt.txt",
+    "domain": "functional_safety",
+    "object_type": "requirement"
+  },
+  {
+    "requirement_id": "ISO-26262-6-2018-5.2.b",
+    "document_id": "ISO-26262-6-2018-EXCERPT",
+    "section": "5.2",
+    "text": "Each software safety requirement shall be traceable to at least one technical safety requirement.",
+    "obligation_level": "shall",
+    "source_file": "documents/iso_26262_functional_safety_excerpt.txt",
+    "domain": "functional_safety",
+    "object_type": "requirement"
+  },
+  {
+    "requirement_id": "ISO-26262-6-2018-5.2.c",
+    "document_id": "ISO-26262-6-2018-EXCERPT",
+    "section": "5.2",
+    "text": "Each software safety requirement shall be verifiable by analysis, review, or test.",
+    "obligation_level": "shall",
+    "source_file": "documents/iso_26262_functional_safety_excerpt.txt",
+    "domain": "functional_safety",
+    "object_type": "requirement"
+  },
+  {
+    "requirement_id": "ISO-26262-6-2018-5.5",
+    "document_id": "ISO-26262-6-2018-EXCERPT",
+    "section": "5.5",
+    "text": "Ambiguous terms shall not be used without quantified criteria.",
+    "obligation_level": "shall",
+    "source_file": "documents/iso_26262_functional_safety_excerpt.txt",
+    "domain": "functional_safety",
+    "object_type": "requirement"
+  },
+  {
+    "requirement_id": "ISO-26262-6-2018-6.3",
+    "document_id": "ISO-26262-6-2018-EXCERPT",
+    "section": "6.3",
+    "text": "Safety-related software components shall be separated from non-safety-related software components to the extent required by the ASIL of the item.",
+    "obligation_level": "shall",
+    "source_file": "documents/iso_26262_functional_safety_excerpt.txt",
+    "domain": "functional_safety",
+    "object_type": "requirement"
+  },
+  {
+    "requirement_id": "ISO-26262-6-2018-6.4",
+    "document_id": "ISO-26262-6-2018-EXCERPT",
+    "section": "6.4",
+    "text": "Freedom from interference shall be ensured between software elements with different ASIL assignments, or evidence shall be provided that interference is controlled.",
+    "obligation_level": "shall",
+    "source_file": "documents/iso_26262_functional_safety_excerpt.txt",
+    "domain": "functional_safety",
+    "object_type": "requirement"
+  },
+  {
+    "requirement_id": "ISO-26262-6-2018-7.2.a",
+    "document_id": "ISO-26262-6-2018-EXCERPT",
+    "section": "7.2",
+    "text": "Coding guidelines shall address language subset such as MISRA C:2012.",
+    "obligation_level": "shall",
+    "source_file": "documents/iso_26262_functional_safety_excerpt.txt",
+    "domain": "functional_safety",
+    "object_type": "requirement"
+  },
+  {
+    "requirement_id": "ISO-26262-6-2018-8.1",
+    "document_id": "ISO-26262-6-2018-EXCERPT",
+    "section": "8.1",
+    "text": "Software unit verification shall provide evidence that the software units fulfil their software unit requirements.",
+    "obligation_level": "shall",
+    "source_file": "documents/iso_26262_functional_safety_excerpt.txt",
+    "domain": "functional_safety",
+    "object_type": "requirement"
+  },
+  {
+    "requirement_id": "ISO-26262-6-2018-8.5",
+    "document_id": "ISO-26262-6-2018-EXCERPT",
+    "section": "8.5",
+    "text": "Failed tests shall be analyzed, classified, and resolved before release of the software to integration testing.",
+    "obligation_level": "shall",
+    "source_file": "documents/iso_26262_functional_safety_excerpt.txt",
+    "domain": "functional_safety",
+    "object_type": "requirement"
+  },
+  {
+    "requirement_id": "ISO-26262-6-2018-10.1",
+    "document_id": "ISO-26262-6-2018-EXCERPT",
+    "section": "10.1",
+    "text": "All safety-related software artifacts shall be placed under configuration management before verification activities commence.",
+    "obligation_level": "shall",
+    "source_file": "documents/iso_26262_functional_safety_excerpt.txt",
+    "domain": "functional_safety",
+    "object_type": "requirement"
+  },
+  {
+    "requirement_id": "ISO-26262-6-2018-10.2",
+    "document_id": "ISO-26262-6-2018-EXCERPT",
+    "section": "10.2",
+    "text": "Each change to safety-related software shall undergo impact analysis, approval by the functional safety manager or delegate, and updated verification evidence as determined by the impact analysis.",
+    "obligation_level": "shall",
+    "source_file": "documents/iso_26262_functional_safety_excerpt.txt",
+    "domain": "functional_safety",
+    "object_type": "requirement"
+  },
+  {
+    "requirement_id": "EU-GSR-2019-ANNEX-II-A.4",
+    "document_id": "EU-GSR-2019-ANNEX-II",
+    "section": "A.4",
+    "text": "The manufacturer shall ensure that systems remain operational during normal operating conditions and shall not design systems to depend on continuous connectivity to external networks for core safety functions.",
+    "obligation_level": "shall",
+    "source_file": "documents/eu_general_safety_regulation_annex.txt",
+    "domain": "automotive",
+    "object_type": "requirement"
+  },
+  {
+    "requirement_id": "EU-GSR-2019-ANNEX-II-C.1.2.1",
+    "document_id": "EU-GSR-2019-ANNEX-II",
+    "section": "C.1.2.1",
+    "text": "The warning tell-tale symbol shall conform to ISO 2575 symbol ID P-087 or subsequent revision accepted by the type-approval authority.",
+    "obligation_level": "shall",
+    "source_file": "documents/eu_general_safety_regulation_annex.txt",
+    "domain": "automotive",
+    "object_type": "requirement"
+  },
+  {
+    "requirement_id": "EU-GSR-2019-ANNEX-II-C.1.2.2",
+    "document_id": "EU-GSR-2019-ANNEX-II",
+    "section": "C.1.2.2",
+    "text": "The system shall remain enabled by default at each ignition cycle.",
+    "obligation_level": "shall",
+    "source_file": "documents/eu_general_safety_regulation_annex.txt",
+    "domain": "automotive",
+    "object_type": "requirement"
+  },
+  {
+    "requirement_id": "EU-GSR-2019-ANNEX-II-C.1.3.1",
+    "document_id": "EU-GSR-2019-ANNEX-II",
+    "section": "C.1.3.1",
+    "text": "Type-approval testing shall include scenarios AEBS-01 through AEBS-05 as defined in UN R152 Annex 2 or equivalent scenarios accepted by the authority.",
+    "obligation_level": "shall",
+    "source_file": "documents/eu_general_safety_regulation_annex.txt",
+    "domain": "automotive",
+    "object_type": "requirement"
+  },
+  {
+    "requirement_id": "EU-GSR-2019-ANNEX-II-C.2.1",
+    "document_id": "EU-GSR-2019-ANNEX-II",
+    "section": "C.2.1",
+    "text": "Where event data recorders are fitted, AEBS activation events shall be recorded with time stamp, vehicle speed, brake pedal status, AEBS state, and longitudinal acceleration.",
+    "obligation_level": "shall",
+    "source_file": "documents/eu_general_safety_regulation_annex.txt",
+    "domain": "automotive",
+    "object_type": "requirement"
+  },
+  {
+    "requirement_id": "EU-GSR-2019-ANNEX-II-C.2.3",
+    "document_id": "EU-GSR-2019-ANNEX-II",
+    "section": "C.2.3",
+    "text": "Personal identifiers shall not be written to the public EDR dataset accessible during roadside inspection.",
+    "obligation_level": "shall",
+    "source_file": "documents/eu_general_safety_regulation_annex.txt",
+    "domain": "automotive",
+    "object_type": "requirement"
+  },
+  {
+    "requirement_id": "EU-GSR-2019-ANNEX-II-D.1",
+    "document_id": "EU-GSR-2019-ANNEX-II",
+    "section": "D.1",
+    "text": "The manufacturer shall demonstrate that series-produced vehicles conform to the approved type with respect to each fitted system in Section B.",
+    "obligation_level": "shall",
+    "source_file": "documents/eu_general_safety_regulation_annex.txt",
+    "domain": "automotive",
+    "object_type": "requirement"
+  },
+  {
+    "requirement_id": "EU-GSR-2019-ANNEX-II-D.4",
+    "document_id": "EU-GSR-2019-ANNEX-II",
+    "section": "D.4",
+    "text": "Software updates affecting safety systems shall be notified to the authority when they alter type-approved behavior unless covered by a prior agreement on over-the-air update governance.",
+    "obligation_level": "shall",
+    "source_file": "documents/eu_general_safety_regulation_annex.txt",
+    "domain": "automotive",
+    "object_type": "requirement"
+  }
+]
