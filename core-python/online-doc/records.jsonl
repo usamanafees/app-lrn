@@ -1,0 +1,6 @@
+{"id": "REQ-1", "section": "1.1", "text": "System shall log access."}
+{"id": "REQ-2", "section": "1.2"}
+
+{"id": "REQ-3", "section": "2.0", "text": "System shall encrypt data."}
+not-json
+{"id": "REQ-1", "section": "9.9", "text": "duplicate id"}
